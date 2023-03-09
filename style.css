@@ -1,0 +1,421 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section{
+    padding: 60px 0;
+  }
+
+  #intro img{
+    box-shadow: 29px -17px 10px 11px rgba(169,166,168,0.75);
+-webkit-box-shadow: 29px -17px 10px 11px rgba(169,166,168,0.75);
+-moz-box-shadow: 29px -17px 10px 11px rgba(169,166,168,0.75);
+  }
+
+
+  footer img{
+    height: 20px;
+    width: 20px;
+    transition: all 0.3s;
+    margin-left: 10px;
+  }
+
+  footer img:hover{
+    transform: scale(1.25);
+  }
+
+  @media screen and (min-width: 992px){
+    #about h1{
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    #about .container{
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  #services .container {
+    width: 100%;
+    height: 500px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .skills h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.progress-bar {
+    background: #959595;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #222;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html {
+    background: #e91e63;
+    animation: html 1s linear forwards;
+}
+
+.css {
+    background: #cddc39;
+    animation: css 1s linear forwards;
+}
+
+.javascript {
+    background: #00bcd4;
+    animation: javascript 1s linear forwards;
+}
+
+.python {
+    background: #ffeb3b;
+    animation: python 1s linear forwards;
+}
+
+.react {
+    background: #9c27b0;
+    animation: react 1s linear forwards;
+}
+
+.html span{
+    border: 1px solid #e91e63;
+}
+
+.css span{
+    border: 1px solid #cddc39;
+}
+
+.javascript span{
+    border: 1px solid #00bcd4;
+}
+
+.python span{
+    border: 1px solid #ffeb3b;
+}
+
+.react span{
+    border: 1px solid #9c27b0;
+}
+
+@keyframes html {
+    100%{
+        width: 86%;
+    }
+}
+
+@keyframes css {
+    100%{
+        width: 74%;
+    }
+}
+
+@keyframes javascript {
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes python {
+    100%{
+        width: 54%;
+    }
+}
+
+@keyframes react {
+    100%{
+        width: 49%;
+    }
+}
+
+/* navbar button style */
+
+
+
+
+/* update button style   */
+
+ .bg-light .btn {
+    --primary-color: #645bff;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    margin: 10px auto;
+  }
+  
+  .bg-light .btn .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bg-light .btn .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .bg-light .btn .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .bg-light .btn:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .bg-light .btn:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  .bg-light .btn:hover .arrow:before {
+    right: 0;
+  }
+
+  /* contact button style */
+
+  #contact .btn {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   #contact .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   #contact .btn:hover {
+    color: #e8e8e8;
+   }
+   
+   #contact .btn:hover::before {
+    width: 100%;
+   }
+
+   /* Learn more button style */
+
+   #about .btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   #about .btn {
+    width: 12rem;
+    height: auto;
+   }
+   
+   #about .btn .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   #about .btn .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   #about .btn .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   #about .btn .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   #about .btn .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   #about .btn:hover .circle {
+    width: 100%;
+   }
+   
+   #about .btn:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   #about .btn:hover .button-text {
+    color: #fff;
+   }
+
+
+   /* hero section button style */
+
+   #intro .btn {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+   }
+   
+   #intro .btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   #intro .btn .button-text {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+   }
+   
+   #intro .btn svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   #intro .btn:hover:before {
+    width: 100%;
+    background: #b1dae7;
+   }
+   
+   #intro .btn:hover svg {
+    transform: translateX(0);
+   }
+   
+   #intro .btn:active {
+    transform: scale(0.95);
+   }
+
+   
+
+   
